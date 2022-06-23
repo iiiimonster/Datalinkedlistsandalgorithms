@@ -1,9 +1,9 @@
 package cn.zwy.rests.envenom;
 
 /**
- * @Description: 舍近求远 有简单的可读性代码 但是非要使用复杂的代码去实现，配合上一步漫天过海使用 效果更佳
- * @author: zwy
- * @date: 2022年06月16日 16:43
+ * &#064;Description:  舍近求远 有简单的可读性代码 但是非要使用复杂的代码去实现，配合上一步漫天过海使用 效果更佳
+ * &#064;author:  zwy
+ * &#064;date:  2022年06月16日 16:43
  */
 public class Detour {
     //定义一个别人看不懂的 零 ！！

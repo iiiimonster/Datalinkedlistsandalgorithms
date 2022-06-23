@@ -1,22 +1,23 @@
 package cn.zwy.structure.linkedlist;
 
+import cn.zwy.structure.linkedlist.entity.SingleLinkedList;
+
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @Description: 单链表反转
- * @author: zwy
- * @date: 2022年06月15日 17:53
+ * &#064;Description:  单链表反转
+ * &#064;author:  zwy
+ * &#064;date:  2022年06月15日 17:53
  */
 public class Reversal {
+
 
     public static void reversal(Object[] objects) {
 
 
     }
 
-    public static void main(String[] args) {
-        // \u000d System.out.println("coder Hydra");
-    }
+
 
 }
