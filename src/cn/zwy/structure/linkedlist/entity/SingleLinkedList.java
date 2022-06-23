@@ -47,7 +47,7 @@ public class SingleLinkedList<T> {
 
 
     /**
-     * 删除链表所有该值
+     * 删除链表所有该值 普通实现（方便理解下一个递归版本）
      * 1. 遍历 删除头节点 头节点会重置
      * 2. 判断 中间节点开始判断删除
      *
@@ -167,6 +167,13 @@ public class SingleLinkedList<T> {
 
     }
 
+    /**
+     *
+     * 判断链表是否包含数据
+     *
+     * @param val 所需判断数据
+     * @return
+     */
     public boolean contain(T val) {
         Node<T> temp = head;
         while (Objects.nonNull(temp)) {
@@ -198,6 +205,12 @@ public class SingleLinkedList<T> {
     }
 
 
+    /**
+     *
+     * 添加数据到末尾
+     *
+     * @param val
+     */
     public void addLast(T val) {
         addIndex(size, val);
     }
