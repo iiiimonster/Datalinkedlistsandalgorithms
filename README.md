@@ -6,8 +6,8 @@ Day 01 ：实现简单无头链表
 Day 02 ：泛型带头节点单链表
 
 力扣：
-203. 移除链表元素
-83. 删除排序链表中的重复元素
+203. 移除链表元素 https://leetcode.cn/problems/remove-linked-list-elements/
+83. 删除排序链表中的重复元素 https://leetcode.cn/problems/remove-duplicates-from-sorted-list/
 
 使用两种方式实现，
 （1）根据题目使用暴力破解
