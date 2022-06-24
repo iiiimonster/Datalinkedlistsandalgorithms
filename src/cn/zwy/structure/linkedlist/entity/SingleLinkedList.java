@@ -3,7 +3,7 @@ package cn.zwy.structure.linkedlist.entity;
 import java.util.Objects;
 
 /**
- * &#064;Description:  简易链表
+ * &#064;Description:  简易无头单链表
  * <p>
  * 参考下文
  * <a href="https://blog.csdn.net/weixin_49329785/article/details/121699280?ops_request_misc=&request_id=&biz_id=102&utm_term=%E5%8D%95%E9%93%BE%E8%A1%A8&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-121699280.142">...</a>
@@ -51,7 +51,7 @@ public class SingleLinkedList<T> {
      * 1. 遍历 删除头节点 头节点会重置
      * 2. 判断 中间节点开始判断删除
      *
-     * @param val
+     * @param val 数据
      */
     public void removeValueAll(T val) {
         // *难点* ： 删除头节点后 头节点会重置 所以要使用while
