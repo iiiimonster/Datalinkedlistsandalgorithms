@@ -13,6 +13,7 @@ public class RemoveLinkedListElements<T> {
 
     public SingleLinkedList<T> removeValueAll (SingleLinkedList<T> singleLinkedList,T val){
 
+
         return  null;
     }
 

@@ -23,6 +23,7 @@ public class SingleLinkedList<T> {
     /**
      * 递归版本删除链表所包含数据
      * leetcode203题：给定一个头节点为head的链表,删除该链表中所有值为val节点并返回删除后的头节点
+     *  https://leetcode.cn/problems/remove-linked-list-elements/
      *
      * @param head 递归节点
      * @param val  判断的值
@@ -44,6 +45,8 @@ public class SingleLinkedList<T> {
         //相当于 返回 传进来的数据 链表长度不变
         return head;
     }
+//    public SingleLinkedList<T> removeValueAll(SingleLinkedList<T> head,T val){
+//    }
 
 
     /**
@@ -149,7 +152,7 @@ public class SingleLinkedList<T> {
      *
      * @param index  下标
      * @param newVal 新值
-     * @return
+     * @return 返回 T
      */
     public T updata(int index, T newVal) {
         if (size <= index || size < 0) {
@@ -172,7 +175,7 @@ public class SingleLinkedList<T> {
      * 判断链表是否包含数据
      *
      * @param val 所需判断数据
-     * @return
+     * @return true：false
      */
     public boolean contain(T val) {
         Node<T> temp = head;
@@ -209,7 +212,7 @@ public class SingleLinkedList<T> {
      *
      * 添加数据到末尾
      *
-     * @param val
+     * @param val 参数
      */
     public void addLast(T val) {
         addIndex(size, val);
@@ -316,6 +319,7 @@ public class SingleLinkedList<T> {
         System.out.println(singleLinkedList);
         singleLinkedList.head = singleLinkedList.removeValueAll(singleLinkedList.head, 999d);
 
+        System.out.println(0==0 && 1==1? true:false);
 
         //查看链表数据
         System.out.println(singleLinkedList);
