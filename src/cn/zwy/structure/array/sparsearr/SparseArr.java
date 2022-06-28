@@ -1,5 +1,8 @@
 package cn.zwy.structure.array.sparsearr;
 
+import cn.zwy.structure.array.queue.ArrayQueue;
+import cn.zwy.structure.array.queue.Queue;
+
 /**
  * &#064;Description:  稀疏数组
  * &#064;author:  zwy
@@ -102,7 +105,10 @@ public class SparseArr {
 
 
     public static void main(String[] args) {
-        int[][] sparse = sparse(getIntArr());
-        sout(decoSparse(sparse));
+/*        int[][] sparse = sparse(getIntArr());
+        sout(decoSparse(sparse));*/
+
+        Queue arrayQueue = new ArrayQueue(3);
+        arrayQueue.operate();
     }
 }
