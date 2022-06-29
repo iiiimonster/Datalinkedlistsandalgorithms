@@ -3,11 +3,11 @@ package cn.zwy.structure.array.queue;
 import java.util.Scanner;
 
 /**
- * &#064;Description:   数组实现队列 一次性
+ * &#064;Description:   环形队列
  * &#064;author:  zwy
  * &#064;date:  2022年06月28日 11:41
  */
-public class ArrayQueue implements Queue {
+public class CircleArrayQueue implements Queue {
     private int front; //头节点 默认为 -1
     private int rear; // 尾节点 默认为 -1
     private final int arrMaxSize; // 队列长度
@@ -67,9 +67,7 @@ public class ArrayQueue implements Queue {
      *
      * @param arrMaxSize 最大值
      */
-    public ArrayQueue(int arrMaxSize) {
-        front = -1;
-        rear = -1;
+    public CircleArrayQueue(int arrMaxSize) {
         this.arrMaxSize = arrMaxSize;
         queue = new int[arrMaxSize];
     }
@@ -78,7 +76,7 @@ public class ArrayQueue implements Queue {
      * 队列已满
      */
     public boolean isFUll() {
-        if (rear == arrMaxSize - 1) {
+        if ((rear + 1) % arrMaxSize == front) {
             System.out.println("队列已经满了,无法加入");
             return true;
         }
@@ -102,14 +100,13 @@ public class ArrayQueue implements Queue {
      * @param var 添加的数据
      */
     public void addQueue(int var) {
-        if (isFUll()){
-            return;
-        }
+        isFUll();
         queue[++rear] = var;
     }
 
     /**
      * 出队列
+     *
      * @return 队列数据
      */
     public int getQueue() throws Exception {
@@ -124,10 +121,14 @@ public class ArrayQueue implements Queue {
      * 查看队列所有数据
      */
     public void show() {
-        for (int i = 0; i < queue.length; i++) {
+        for (int i = front; i < front + getSize(); i++) {
             System.out.printf("arr[%d] = %d \t", i, queue[i]);
             System.out.println();
         }
+    }
+
+    private int getSize() {
+        return 0;
     }
 
     /**
@@ -140,6 +141,5 @@ public class ArrayQueue implements Queue {
         System.out.printf("头节点:%d", queue[front + 1]);
         System.out.println();
     }
-
 
 }

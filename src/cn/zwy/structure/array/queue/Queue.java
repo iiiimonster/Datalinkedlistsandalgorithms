@@ -10,40 +10,45 @@ public interface Queue {
     /**
      * 队列已满
      */
-    public void isFUll();
+    boolean isFUll();
 
     /**
      * 队列是否为空
      */
-    public void isNull();
+    boolean isNull();
 
     /**
      * 添加队列数据
      *
      * @param var 添加的数据
      */
-    public void addQueue(int var);
+    void addQueue(int var);
 
     /**
      * 出队列
      *
      * @return 队列数据
      */
-    public int getQueue();
+    int getQueue() throws Exception;
 
     /**
      * 查看队列所有数据
      */
-    public void show();
+    void show();
 
     /**
      * 展示队列头数据
      */
-    public void showHead();
+    void showHead() throws Exception;
 
     /**
      * 查看数据
      */
-    public void operate();
+    void operate();
+
+    static void main(String[] args) {
+        System.out.println(4 % 4);
+
+    }
 
 }
