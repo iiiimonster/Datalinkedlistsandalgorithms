@@ -101,7 +101,8 @@ public class CircleArrayQueue implements Queue {
      */
     public void addQueue(int var) {
         isFUll();
-        queue[++rear] = var;
+        queue[rear] = var;
+        rear = (rear + 1) % arrMaxSize;
     }
 
     /**
@@ -113,8 +114,11 @@ public class CircleArrayQueue implements Queue {
         if (isNull()) {
             throw new Exception("队列为空,无法输出");
         }
-        ++front;
-        return queue[front];
+        int temp = queue[front];
+
+        front = (front + 1) % arrMaxSize;
+
+        return temp;
     }
 
     /**
@@ -122,13 +126,13 @@ public class CircleArrayQueue implements Queue {
      */
     public void show() {
         for (int i = front; i < front + getSize(); i++) {
-            System.out.printf("arr[%d] = %d \t", i, queue[i]);
+            System.out.printf("arr[%d] = %d \t", i % arrMaxSize, queue[i % arrMaxSize]);
             System.out.println();
         }
     }
 
     private int getSize() {
-        return 0;
+        return (rear + arrMaxSize - front) % arrMaxSize;
     }
 
     /**
@@ -138,7 +142,7 @@ public class CircleArrayQueue implements Queue {
         if (isNull()) {
             throw new Exception("队列为空,无法输出");
         }
-        System.out.printf("头节点:%d", queue[front + 1]);
+        System.out.printf("头节点:%d", queue[front]);
         System.out.println();
     }
 

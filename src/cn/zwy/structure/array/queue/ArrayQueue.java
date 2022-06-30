@@ -102,7 +102,7 @@ public class ArrayQueue implements Queue {
      * @param var 添加的数据
      */
     public void addQueue(int var) {
-        if (isFUll()){
+        if (isFUll()) {
             return;
         }
         queue[++rear] = var;
@@ -110,6 +110,7 @@ public class ArrayQueue implements Queue {
 
     /**
      * 出队列
+     *
      * @return 队列数据
      */
     public int getQueue() throws Exception {
