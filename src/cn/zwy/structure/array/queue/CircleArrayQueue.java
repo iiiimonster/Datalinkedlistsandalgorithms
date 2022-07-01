@@ -25,7 +25,6 @@ public class CircleArrayQueue implements Queue {
             System.out.println("输入 e (exit) 退出程序");
             key = scanner.next().charAt(0);
             switch (key) {
-
                 case 'a':
                     System.out.println("请输入要添加的数据:");
                     int val = scanner.nextInt();
@@ -58,7 +57,6 @@ public class CircleArrayQueue implements Queue {
                     flag = false;
                     break;
             }
-
         }
     }
 
@@ -100,7 +98,9 @@ public class CircleArrayQueue implements Queue {
      * @param var 添加的数据
      */
     public void addQueue(int var) {
-        isFUll();
+        if (isFUll()) {
+            return;
+        }
         queue[rear] = var;
         rear = (rear + 1) % arrMaxSize;
     }
@@ -115,9 +115,7 @@ public class CircleArrayQueue implements Queue {
             throw new Exception("队列为空,无法输出");
         }
         int temp = queue[front];
-
         front = (front + 1) % arrMaxSize;
-
         return temp;
     }
 
@@ -125,6 +123,9 @@ public class CircleArrayQueue implements Queue {
      * 查看队列所有数据
      */
     public void show() {
+        if (isNull()) {
+            return ;
+        }
         for (int i = front; i < front + getSize(); i++) {
             System.out.printf("arr[%d] = %d \t", i % arrMaxSize, queue[i % arrMaxSize]);
             System.out.println();
@@ -139,10 +140,8 @@ public class CircleArrayQueue implements Queue {
      * 展示队列头数据
      */
     public void showHead() throws Exception {
-        if (isNull()) {
-            throw new Exception("队列为空,无法输出");
-        }
-        System.out.printf("头节点:%d", queue[front]);
+        if (isNull()) throw new Exception("队列为空,无法输出");
+        System.out.printf("头节点:arr[%d] = %d ",front, queue[front]);
         System.out.println();
     }
 
