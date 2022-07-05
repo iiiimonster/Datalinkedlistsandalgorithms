@@ -23,7 +23,7 @@ public class SingleLinkedList<T> {
     /**
      * 递归版本删除链表所包含数据
      * leetcode203题：给定一个头节点为head的链表,删除该链表中所有值为val节点并返回删除后的头节点
-     *  https://leetcode.cn/problems/remove-linked-list-elements/
+     * https://leetcode.cn/problems/remove-linked-list-elements/
      *
      * @param head 递归节点
      * @param val  判断的值
@@ -171,7 +171,6 @@ public class SingleLinkedList<T> {
     }
 
     /**
-     *
      * 判断链表是否包含数据
      *
      * @param val 所需判断数据
@@ -209,7 +208,6 @@ public class SingleLinkedList<T> {
 
 
     /**
-     *
      * 添加数据到末尾
      *
      * @param val 参数
@@ -319,7 +317,7 @@ public class SingleLinkedList<T> {
         System.out.println(singleLinkedList);
         singleLinkedList.head = singleLinkedList.removeValueAll(singleLinkedList.head, 999d);
 
-        System.out.println(0==0 && 1==1? true:false);
+        System.out.println(0 == 0 && 1 == 1 ? true : false);
 
         //查看链表数据
         System.out.println(singleLinkedList);
