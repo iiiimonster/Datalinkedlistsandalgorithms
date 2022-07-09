@@ -3,20 +3,20 @@ package cn.zwy.structure.linkedlist.leetcode.sword;
 import cn.zwy.structure.linkedlist.entity.SingleLinkedList;
 
 /**
- * &#064;Description:   <a href="https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/">链表中倒数第k个节点</a>
- * 给定一个链表: 1->2->3->4->5, 和 k = 2.
- * 返回链表 4->5.
- * &#064;author:  zwy
- * &#064;date:  2022年07月04日 11:38
+ * &#064;Description:   <a href="https://leetcode.cn/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/">链表中倒数第k个节点</a><BR/>
+ * 给定一个链表: 1->2->3->4->5, 和 k = 2.<BR/>
+ * 返回链表 4->5.<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年07月04日 11:38<BR/>
  */
 public class Offer22 {
 
     /**
-     * 思路二：快慢指针（双指针） 时间：O(n)
-     * 1.快指针 fast 先走 k 步
-     * 2.慢指针 slow 和 快指针 fast 一起走
-     * 3.快指针 fast 到最后，慢指针 slow指的就是倒数第k个
-     * 4.返回慢指针 slow
+     * 思路二：快慢指针（双指针） 时间：O(n)<BR/>
+     * 1.快指针 fast 先走 k 步<BR/>
+     * 2.慢指针 slow 和 快指针 fast 一起走<BR/>
+     * 3.快指针 fast 到最后，慢指针 slow指的就是倒数第k个<BR/>
+     * 4.返回慢指针 slow<BR/>
      *
      * @param head 链表头节点
      * @param k    倒数第k位
@@ -36,10 +36,10 @@ public class Offer22 {
     }
 
     /**
-     * 思路一：单指针
-     * 1.先遍历所有数据获取链表长度 size 时间O(n)
-     * 2.size ➖ k 获取遍历次数  时间O(n): 循环 n次
-     * 3.for 遍历 返回链表
+     * 思路一：单指针<BR/>
+     * 1.先遍历所有数据获取链表长度 size 时间O(n)<BR/>
+     * 2.size ➖ k 获取遍历次数  时间O(n): 循环 n次<BR/>
+     * 3.for 遍历 返回链表<BR/>
      *
      * @param head 链表头节点
      * @param k    倒数第k位
@@ -69,10 +69,10 @@ public class Offer22 {
     }
 
     /**
-     * 思路一：单指针 （单临时变量）
-     * 1.先遍历所有数据获取链表长度 size 时间O(n) 空间O(n)： 定义临时变量 temp
-     * 2.size ➖ k 获取遍历次数  时间O(n): 循环 n次 ，空间O(n)： 定义临时变量 temp
-     * 3.for 遍历 返回链表
+     * 思路一：单指针 （单临时变量）<BR/>
+     * 1.先遍历所有数据获取链表长度 size 时间O(n) 空间O(n)： 定义临时变量 temp<BR/>
+     * 2.size ➖ k 获取遍历次数  时间O(n): 循环 n次 ，空间O(n)： 定义临时变量 temp<BR/>
+     * 3.for 遍历 返回链表<BR/>
      *
      * @param head 链表头节点
      * @param k    倒数第k位

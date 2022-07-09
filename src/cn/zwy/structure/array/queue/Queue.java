@@ -1,9 +1,9 @@
 package cn.zwy.structure.array.queue;
 
 /**
- * &#064;Description:  队列接口
- * &#064;author:  zwy
- * &#064;date:  2022年06月28日 17:28
+ * &#064;Description:  队列接口<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年06月28日 17:28<BR/>
  */
 public interface Queue {
 

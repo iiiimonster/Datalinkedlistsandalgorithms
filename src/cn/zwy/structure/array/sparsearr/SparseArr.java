@@ -4,9 +4,9 @@ import cn.zwy.structure.array.queue.ArrayQueue;
 import cn.zwy.structure.array.queue.Queue;
 
 /**
- * &#064;Description:  稀疏数组
- * &#064;author:  zwy
- * &#064;date:  2022年06月27日 14:58
+ * &#064;Description:  稀疏数组<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年06月27日 14:58<BR/>
  */
 public class SparseArr {
 
@@ -14,10 +14,10 @@ public class SparseArr {
 
 
     /**
-     * 解压稀疏数组
-     *
-     * @param sparseArr 稀疏数组
-     * @return 解压后二维数组
+     * 解压稀疏数组<BR/>
+     *<BR/>
+     * @param sparseArr 稀疏数组<BR/>
+     * @return 解压后二维数组<BR/>
      */
     public static int[][] decoSparse(int[][] sparseArr) {
         int[][] arr = new int[sparseArr[0][0]][sparseArr[0][1]];
@@ -29,10 +29,10 @@ public class SparseArr {
 
 
     /**
-     * 压缩稀疏数组
-     *
-     * @param arr 数组
-     * @return 返回数组
+     * 压缩稀疏数组<BR/>
+     *<BR/>
+     * @param arr 数组<BR/>
+     * @return 返回数组<BR/>
      */
     public static int[][] sparse(int[][] arr) {
         int sum = 0;
@@ -78,20 +78,20 @@ public class SparseArr {
 
 
     /**
-     * 初始化二维数组
-     * <p>
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	1	0	0	0	0	0	0	0	0
-     * 0	0	0	0	2	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * 0	0	0	0	0	0	0	0	0	0	0
-     * </p>
+     * 初始化二维数组<BR/>
+     * <p><BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	1	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	2	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * 0	0	0	0	0	0	0	0	0	0	0<BR/>
+     * </p><BR/>
      *
      * @return int 二维数组
      */

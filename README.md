@@ -1,6 +1,6 @@
 # 学习数据结构与算法
 ```
-链表类型  题目练习 
+链表,数组类型  题目练习 
 
 Day 01 ：实现简单无头链表  SingleLinkedList
 Day 02 ：泛型带头节点单链表  SinglyLinkedListOfLeadingNodes
@@ -25,3 +25,4 @@ Day 05 : 链表中倒数第k个节点 Offer22
 4.删除链表倒数第n个结点
 5.求链表的中间结点
 ```
+

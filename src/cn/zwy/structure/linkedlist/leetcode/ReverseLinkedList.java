@@ -2,18 +2,19 @@ package cn.zwy.structure.linkedlist.leetcode;
 
 
 /**
- * &#064;Description:<a href="https://leetcode.cn/problems/reverse-linked-list/206/">单链表反转 力扣206</a>
- * &#064;author:  zwy
- * &#064;date:  2022年07月01日 17:47
+ * &#064;Description:<a href="https://leetcode.cn/problems/reverse-linked-list/206/">单链表反转 力扣206</a><BR/>
+ * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年07月01日 17:47<BR/>
  */
 public class ReverseLinkedList {
 
 
     /**
-     * 思路三：迭代法 出栈
-     * 1.结合思路二方便理解
-     * 2.栈思想是后进先出
-     * 3.1. 第一个出栈的是链表结尾，第二个出栈的是链表倒数第二个，把链表倒数第二个
+     * 思路三：迭代法 出栈<BR/>
+     * 1.结合思路二方便理解<BR/>
+     * 2.栈思想是后进先出<BR/>
+     * 3.1. 第一个出栈的是链表结尾，第二个出栈的是链表倒数第二个，把链表倒数第二个<BR/>
      *
      * @param head 头节点
      * @return 链表
@@ -30,8 +31,8 @@ public class ReverseLinkedList {
 
 
     /**
-     * 思路二：迭代
-     * 1.遍历链表，每次遍历都把链表放到头后面
+     * 思路二：迭代<BR/>
+     * 1.遍历链表，每次遍历都把链表放到头后面<BR/>
      *
      * @param head 头节点
      * @return 链表
@@ -45,9 +46,9 @@ public class ReverseLinkedList {
     }
 
     /**
-     * 思路一：头插法 迭代
-     * 1.缓存进入下次遍历的 链表节点
-     * 2.把其他节点放到当前节点的后面
+     * 思路一：头插法 迭代<BR/>
+     * 1.缓存进入下次遍历的 链表节点<BR/>
+     * 2.把其他节点放到当前节点的后面<BR/>
      *
      * @param head 头节点
      * @return 链表

@@ -1,9 +1,9 @@
 package cn.zwy.structure.linkedlist.entity;
 
 /**
- * &#064;Description: 水浒传链表练习 带头链表
- * &#064;author:  zwy
- * &#064;date:  2022年07月01日 10:39
+ * &#064;Description: 水浒传链表练习 带头链表<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年07月01日 10:39<BR/>
  */
 public class WaterMarginLinkedList {
 

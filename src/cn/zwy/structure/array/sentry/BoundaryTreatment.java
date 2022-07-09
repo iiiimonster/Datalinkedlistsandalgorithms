@@ -3,10 +3,10 @@ package cn.zwy.structure.array.sentry;
 import jdk.nashorn.internal.objects.annotations.Where;
 
 /**
- * &#064;Description:  哨兵模式 简单解决边界模式
- * 场景 给定长度charsSize数组chars中，查找key，返回key所在的位置,
- * &#064;author:  zwy
- * &#064;date:  2022年06月15日 11:43
+ * &#064;Description:  哨兵模式 简单解决边界模式<BR/>
+ * 场景 给定长度charsSize数组chars中，查找key，返回key所在的位置,<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年06月15日 11:43<BR/>
  */
 public class BoundaryTreatment {
 

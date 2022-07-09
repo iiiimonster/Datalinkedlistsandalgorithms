@@ -3,9 +3,9 @@ package cn.zwy.structure.array.queue;
 import java.util.Scanner;
 
 /**
- * &#064;Description:   数组实现队列 一次性
- * &#064;author:  zwy
- * &#064;date:  2022年06月28日 11:41
+ * &#064;Description:   数组实现队列 一次性<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年06月28日 11:41<BR/>
  */
 public class ArrayQueue implements Queue {
     private int front; //头节点 默认为 -1

@@ -2,10 +2,10 @@ package cn.zwy.structure.array.queue;
 
 import java.util.Scanner;
 
-/**
- * &#064;Description:   环形队列
- * &#064;author:  zwy
- * &#064;date:  2022年06月28日 11:41
+/**<BR/>
+ * &#064;Description:   环形队列<BR/>
+ * &#064;author:  zwy<BR/>
+ * &#064;date:  2022年06月28日 11:41<BR/>
  */
 public class CircleArrayQueue implements Queue {
     private int front; //头节点 默认为 -1

@@ -23,7 +23,7 @@ public class SingleLinkedList<T> {
     /**
      * 递归版本删除链表所包含数据
      * leetcode203题：给定一个头节点为head的链表,删除该链表中所有值为val节点并返回删除后的头节点
-     * https://leetcode.cn/problems/remove-linked-list-elements/
+     * <a href="https://leetcode.cn/problems/remove-linked-list-elements/">...</a>
      *
      * @param head 递归节点
      * @param val  判断的值

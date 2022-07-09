@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * &#064;Description:  <a href="https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">从尾到头打印链表</a>
- * &#064;author:  zwy
- * &#064;date:  2022年07月05日 17:39
+ * &#064;Description:  <a href="https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">从尾到头打印链表</a> <BR/>
+ * &#064;author:  zwy <BR/>
+ * &#064;date:  2022年07月05日 17:39 <BR/>
  */
 public class Offer06 {
 
@@ -23,7 +23,7 @@ public class Offer06 {
     }
 
     /**
-     * 思路二： 递归法 recursion
+     * 思路二： 递归法 recursion <BR/>
      * 1.利用栈先进后出原则
      *
      * @param head 需遍历链表
@@ -41,10 +41,10 @@ public class Offer06 {
 
 
     /**
-     * 思路一： 暴力破解
-     * 1. 遍历 head 获取 head 长度 size
-     * 2. 定义数组 长度为 size
-     * 3. 遍历链表，每次遍历长度 把数据放到 int [size --]
+     * 思路一： 暴力破解 <BR/>
+     * 1. 遍历 head 获取 head 长度 size<BR/>
+     * 2. 定义数组 长度为 size<BR/>
+     * 3. 遍历链表，每次遍历长度 把数据放到 int [size --]<BR/>
      *
      * @param head 需遍历链表
      * @return 返回倒序数组
