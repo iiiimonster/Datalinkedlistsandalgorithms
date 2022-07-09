@@ -1,6 +1,7 @@
 package cn.zwy.structure.linkedlist.leetcode;
 
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * &#064;Description:   <a href="https://leetcode.cn/problems/linked-list-cycle/">环形链表</a>
@@ -12,14 +13,26 @@ public class LinkedListCycle {
 
 
     /**
-     * 思路一：
-     * 1.遍历整个链表，在尾处
+     * 思路二：利用 set唯一性结构来 判断是否有回环
      *
      * @param head
      * @return
      */
     public static boolean hasCycleOne(ListNode head) {
-        HashSet<Integer> ints = new HashSet<>();
+        Set<Integer> ints = new HashSet<>();
+        while (head!=null){
+            if (!ints.add(head.val)) return true;
+            head=head.next;
+        }
+        return false;
+    }    /**
+     * 思路一：利用 set唯一性结构来 判断是否有回环
+     *
+     * @param head
+     * @return
+     */
+    public static boolean hasCycleOne(ListNode head) {
+        Set<Integer> ints = new HashSet<>();
         while (head!=null){
             if (!ints.add(head.val)) return true;
             head=head.next;
