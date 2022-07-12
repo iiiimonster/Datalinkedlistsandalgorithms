@@ -13,8 +13,7 @@
 
 1.ReverseLinkedList  单链表反转 https://leetcode.cn/problems/reverse-linked-list/206
 2.LinkedListCycle  链表中环的检测  https://leetcode.cn/problems/linked-list-cycle/
-3.两个有序的链表合并
-4.删除链表倒数第n个结点
-5.求链表的中间结点
+3.MergeTwoSortedLists  两个有序的链表合并 https://leetcode.cn/problems/merge-two-sorted-lists/
+4.求链表的中间结点
 ```
 
