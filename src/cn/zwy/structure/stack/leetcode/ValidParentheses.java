@@ -1,4 +1,4 @@
-package cn.zwy.algorithm.simpleness.leetcode;
+package cn.zwy.structure.stack.leetcode;
 
 import java.util.*;
 
@@ -17,7 +17,7 @@ public class ValidParentheses {
      * 思路一 ： 栈实现
      * 1.如果 s 的长度为 奇数直接返回false
      * 2.依次把左括号放到栈顶
-     * 3.每次遇到右括号就取出栈顶左括号对比
+     * 3.每次遇到右括号就取出栈顶左括号对比，判断是否是右括号：map.containsKey(c)
      * 3.匹配则继续取出
      * 4.不匹配则返回false
      *

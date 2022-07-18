@@ -22,7 +22,13 @@ Offer22 剑指offer06:  从尾到头打印链表 https://leetcode.cn/problems/co
 4.MiddleOfTheLinkedList 求链表的中间结点  https://leetcode.cn/problems/middle-of-the-linked-list/
 ```
 ```
-链表,数组类型  题目练习 
-20,155,232,844,224,682,496.
+栈  题目练习 
+1. 20    ValidParentheses https://leetcode.cn/problems/valid-parentheses/ 有效的括号
+2. 155   MinStack  https://leetcode.cn/problems/min-stack/   最小栈
+232
+844
+224
+682
+496
 ```
 
