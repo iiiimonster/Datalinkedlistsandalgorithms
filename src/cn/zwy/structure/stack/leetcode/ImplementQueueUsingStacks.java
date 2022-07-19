@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * &#064;Description:   todo   <a href="https://leetcode.cn/problems/implement-queue-using-stacks/">用栈实现队列</a>
+ * &#064;Description:      <a href="https://leetcode.cn/problems/implement-queue-using-stacks/">用栈实现队列</a>
  * 思路一 ： 双栈，一个辅助栈，一个队列栈
  * 1. 每次来数据，先把队列栈的数据全部 push到辅助栈，然后辅助栈加入数据 得到：
  * 添加 5进入 队列栈【4，3，2，1】 -》 辅助栈【1，2，3，4，5】 -》 队列栈【】
@@ -20,30 +20,39 @@ public class ImplementQueueUsingStacks {
 
 
     public ImplementQueueUsingStacks() {
-        stackP = new LinkedList<>();
-        stackT = new LinkedList<>();
+        stackP = new LinkedList<Integer>();
+        stackT = new LinkedList<Integer>();
     }
 
     public void push(int x) {
-        for (Integer integer : stackP) {
-            stackT.push(integer);
-        }
-        stackT.push(x);
-
-        for (Integer integer : stackT) {
-            stackP.push(integer);
-        }
+        stackP.push(x);
     }
 
     public int pop() {
-        return stackP.pop();
+        if (stackT.isEmpty()){
+            setStackT();
+        }
+        return stackT.pop();
     }
 
     public int peek() {
-        return stackP.peek();
+        if (stackT.isEmpty()){
+            setStackT();
+        }
+        return stackT.peek();
     }
 
     public boolean empty() {
-        return stackP.isEmpty();
+        return stackP.isEmpty() && stackT.isEmpty();
+    }
+
+    public void setStackT() {
+        while (!stackP.isEmpty()) {
+            stackT.push(stackP.pop());
+        }
+    }
+
+    public static void main(String[] args) {
+
     }
 }
