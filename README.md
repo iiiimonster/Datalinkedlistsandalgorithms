@@ -26,7 +26,7 @@ Offer22 剑指offer06:  从尾到头打印链表 https://leetcode.cn/problems/co
 1. 20    ValidParentheses https://leetcode.cn/problems/valid-parentheses/ 有效的括号
 2. 155   MinStack  https://leetcode.cn/problems/min-stack/   最小栈
 3. 232   ImplementQueueUsingStacks  https://leetcode.cn/problems/implement-queue-using-stacks/  用栈实现队列
-4. 844    比较含退格的字符串
+4. 844   Solution  https://leetcode.cn/problems/implement-queue-using-stacks/ 比较含退格的字符串
 224
 682
 496
