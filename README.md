@@ -29,6 +29,7 @@ Offer22 剑指offer06:  从尾到头打印链表 https://leetcode.cn/problems/co
 4. 844.比较含退格的字符串   Solution  https://leetcode.cn/problems/implement-queue-using-stacks/ 
 5. 224.基本计算器   BasicCalculator   https://leetcode.cn/problems/basic-calculator/
 6. 682.棒球比赛     BaseballGame      https://leetcode.cn/problems/baseball-game/
-496
+7. 496.下一个更大元素 I  NextGreaterElementI   https://leetcode.cn/problems/next-greater-element-i/
 ```
 
+【
