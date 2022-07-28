@@ -1,7 +1,8 @@
 package cn.zwy.structure.array.sparsearr;
 
-import cn.zwy.structure.array.queue.ArrayQueue;
-import cn.zwy.structure.array.queue.Queue;
+
+import cn.zwy.structure.queue.entity.array.ArrayQueue;
+import cn.zwy.structure.queue.entity.array.Queue;
 
 /**
  * &#064;Description:  稀疏数组<BR/>

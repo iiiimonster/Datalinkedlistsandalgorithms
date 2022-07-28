@@ -1,4 +1,4 @@
-package cn.zwy.structure.array.queue;
+package cn.zwy.structure.queue.entity.array;
 
 /**
  * &#064;Description:  队列接口<BR/>
@@ -20,9 +20,9 @@ public interface Queue {
     /**
      * 添加队列数据
      *
-     * @param var 添加的数据
+     * @param val 添加的数据
      */
-    void addQueue(int var);
+    void addQueue(int val);
 
     /**
      * 出队列

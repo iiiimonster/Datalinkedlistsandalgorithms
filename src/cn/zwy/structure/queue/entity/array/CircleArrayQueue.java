@@ -1,4 +1,4 @@
-package cn.zwy.structure.array.queue;
+package cn.zwy.structure.queue.entity.array;
 
 import java.util.Scanner;
 
@@ -13,6 +13,7 @@ public class CircleArrayQueue implements Queue {
     private final int arrMaxSize; // 队列长度
     private final int[] queue; // 队列数组
 
+    @Override
     public void operate() {
         boolean flag = true;
         char key = ' ';
@@ -73,6 +74,7 @@ public class CircleArrayQueue implements Queue {
     /**
      * 队列已满
      */
+    @Override
     public boolean isFUll() {
         if ((rear + 1) % arrMaxSize == front) {
             System.out.println("队列已经满了,无法加入");
@@ -84,6 +86,7 @@ public class CircleArrayQueue implements Queue {
     /**
      * 队列是否为空
      */
+    @Override
     public boolean isNull() {
         if (front == rear) {
             System.out.println("队列为空,无法输出");
@@ -95,13 +98,14 @@ public class CircleArrayQueue implements Queue {
     /**
      * 添加队列数据
      *
-     * @param var 添加的数据
+     * @param val 添加的数据
      */
-    public void addQueue(int var) {
+    @Override
+    public void addQueue(int val) {
         if (isFUll()) {
             return;
         }
-        queue[rear] = var;
+        queue[rear] = val;
         rear = (rear + 1) % arrMaxSize;
     }
 
@@ -110,6 +114,7 @@ public class CircleArrayQueue implements Queue {
      *
      * @return 队列数据
      */
+    @Override
     public int getQueue() throws Exception {
         if (isNull()) {
             throw new Exception("队列为空,无法输出");
@@ -122,6 +127,7 @@ public class CircleArrayQueue implements Queue {
     /**
      * 查看队列所有数据
      */
+    @Override
     public void show() {
         if (isNull()) {
             return ;
@@ -139,6 +145,7 @@ public class CircleArrayQueue implements Queue {
     /**
      * 展示队列头数据
      */
+    @Override
     public void showHead() throws Exception {
         if (isNull()) throw new Exception("队列为空,无法输出");
         System.out.printf("头节点:arr[%d] = %d ",front, queue[front]);

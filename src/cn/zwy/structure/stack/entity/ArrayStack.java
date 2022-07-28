@@ -6,8 +6,17 @@ package cn.zwy.structure.stack.entity;
  * &#064;date:  2022年07月14日 14:35<BR/>
  */
 public class ArrayStack {
+    /**
+     * 数组 stack
+     */
     private String[] stack;
+    /**
+     * 栈中元素个数
+     */
     private int count;
+    /**
+     * 栈空间
+     */
     private int size;
 
     /**
