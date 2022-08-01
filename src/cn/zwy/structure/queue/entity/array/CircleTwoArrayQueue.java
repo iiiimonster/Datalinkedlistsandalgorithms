@@ -1,5 +1,7 @@
 package cn.zwy.structure.queue.entity.array;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * &#064;Description:  循环队列 二
  * &#064;author:  zwy
@@ -71,6 +73,7 @@ public class CircleTwoArrayQueue {
         System.out.println(circleTwoArrayQueue.enQueue(1));
         System.out.println(circleTwoArrayQueue.enQueue(2));
         System.out.println(circleTwoArrayQueue.enQueue(3));
+        System.out.println(circleTwoArrayQueue.enQueue(7));
 
 
         for (int i = 0; i < 4; i++) {

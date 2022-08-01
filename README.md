@@ -31,5 +31,14 @@ Offer22 剑指offer06:  从尾到头打印链表 https://leetcode.cn/problems/co
 6. 682.棒球比赛     BaseballGame      https://leetcode.cn/problems/baseball-game/
 7. 496.下一个更大元素 I  NextGreaterElementI   https://leetcode.cn/problems/next-greater-element-i/
 ```
+```
+队列  题目练习 
+1. 622. 设计循环队列   MyCircularQueue   https://leetcode.cn/problems/design-circular-queue/submissions/
+2. 641. 设计循环双端队列 
+3. 1670. 设计前中后队列  
+4. 918. 环形子数组的最大和
+5. 2071. 你可以安排的最多任务数目  
+
+```
 
 【
