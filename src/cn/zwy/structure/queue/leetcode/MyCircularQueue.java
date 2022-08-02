@@ -55,6 +55,7 @@ public class MyCircularQueue {
     }
 
     /**
+     * 取尾巴
      *  先加上原来的长度 再 -1 去运算
      * @return 对应数据
      */
