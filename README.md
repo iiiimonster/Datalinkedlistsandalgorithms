@@ -37,7 +37,7 @@ Offer22 剑指offer06:  从尾到头打印链表 https://leetcode.cn/problems/co
 2. 641. 设计循环双端队列  MyCircularDeque  https://leetcode.cn/problems/design-circular-deque/submissions/
 3. 剑指 Offer 10- I. 斐波那契数列  Solution  https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/
 4. 53. 最大子数组和 maxSubArray  https://leetcode.cn/problems/maximum-subarray/
-5. 918. 环形子数组的最大和  
+5. 1944. 队列中可以看到的人数  https://leetcode.cn/problems/number-of-visible-people-in-a-queue/
 6. 2071. 你可以安排的最多任务数目  
 
 ```
