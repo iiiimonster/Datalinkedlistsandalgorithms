@@ -8,6 +8,32 @@ package cn.zwy.structure.queue.leetcode;
 public class maxSubArray {
 
 
+    /**
+     * 动态规划
+     * @param nums 处理数组
+     * @return 返回最大值
+     */
+    public int maxSubArrayTwo(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i-1]>0){
+                nums[i] += nums[i-1];
+            }
+        }
+        int a= nums[0];
+        for (int num : nums) {
+            if (num>a){
+                a = num;
+            }
+        }
+
+        return a;
+    }
+
+    /**
+     * 贪心算法
+     * @param nums 处理数组
+     * @return 返回最大值
+     */
     public int maxSubArray(int[] nums) {
         int pre = 0, max = nums[0];
         for (int num : nums) {
