@@ -37,7 +37,7 @@ public class Solution {
         if (n < 2) {
             return n;
         }
-        int a = 0, b = 0, t = 1;
+        int a, b = 0, t = 1;
         for (int i = 0; i <= n - 2; i++) {
             a = b;
             b = t;
