@@ -38,8 +38,15 @@ Offer22 剑指offer06:  从尾到头打印链表 https://leetcode.cn/problems/co
 3. 剑指 Offer 10- I. 斐波那契数列  Solution  https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/
 4. 53. 最大子数组和 maxSubArray  https://leetcode.cn/problems/maximum-subarray/
 5. 1944. 队列中可以看到的人数  https://leetcode.cn/problems/number-of-visible-people-in-a-queue/
-6. 2071. 你可以安排的最多任务数目  
+
+```
+```
+递归  题目练习 
+1. 
+2. 
+3. 
+4. 
+5. 
 
 ```
 
-【
