@@ -1,4 +1,4 @@
-package cn.zwy.algorithm.recursion;
+package cn.zwy.algorithm.recursion.leetcode;
 
 /**
  * &#064;Description:  <a href="https://leetcode.cn/problems/fibonacci-number/">斐波那契数</a>
