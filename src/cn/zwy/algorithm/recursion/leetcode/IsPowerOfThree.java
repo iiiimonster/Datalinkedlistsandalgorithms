@@ -41,6 +41,7 @@ public class IsPowerOfThree {
     }
 
     public static void main(String[] args) {
+        boolean  a= true;
         IsPowerOfThree isPowerOfThree = new IsPowerOfThree();
         System.out.println(isPowerOfThree.isPowerOfThree(27));
     }
