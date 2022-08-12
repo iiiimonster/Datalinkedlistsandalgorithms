@@ -41,12 +41,11 @@ Offer22 剑指offer06:  从尾到头打印链表 https://leetcode.cn/problems/co
 
 ```
 ```
-递归  题目练习 
+递归(学习树状结构后回来继续练习)  题目练习 
 1.  509. 斐波那契数  FibonacciNumber https://leetcode.cn/problems/fibonacci-number/
-2.  
-3. 
-4. 
-5. 
-
+2.  3 的幂  IsPowerOfThree    https://leetcode.cn/problems/power-of-three/
+3.  预测赢家   PredictTheWinner   https://leetcode.cn/problems/predict-the-winner/
+4. 100. 相同的树 ****** https://leetcode.cn/problems/same-tree/
+5.  572. 另一棵树的子树  ******* https://leetcode.cn/problems/subtree-of-another-tree/
 ```
 

@@ -14,5 +14,27 @@ package cn.zwy.algorithm.recursion.leetcode;
  * &#064;date:  2022年08月09日 15:50<BR/>
  */
 public class PredictTheWinner {
+    public boolean PredictTheWinner(int[] nums) {
+        return total(nums, 0, nums.length - 1) >= 0;
+    }
+
+    /**
+     * 思路一：递归
+     * 
+     *
+     * @param nums  数组
+     * @param start 数组起始位置
+     * @param end   数组结束位置
+     * @return 返回最终结果
+     */
+    public int total(int[] nums, int start, int end) {
+        if (start == end) {
+            return nums[start];
+        }
+        int scoreStart = nums[start] - total(nums, start + 1, end);
+        int scoreEnd = nums[end] - total(nums, start, end - 1);
+        return Math.max(scoreStart, scoreEnd);
+    }
 
 }
+
