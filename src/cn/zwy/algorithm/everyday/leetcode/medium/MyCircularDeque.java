@@ -5,17 +5,17 @@ package cn.zwy.algorithm.everyday.leetcode.medium;
  * &#064;author:  zwy
  * &#064;date:  2022年08月15日 11:51
  */
-public class CircularDeque {
+public class MyCircularDeque {
 
     int[] deque;
     int size;
     int Front;
     int Last;
 
-    public CircularDeque(int k) {
+    public MyCircularDeque(int k) {
         deque = new int[k + 1];
         size = k + 1;
-        Front =Last= 0;
+        Front = Last = 0;
     }
 
     public boolean insertFront(int value) {
@@ -27,8 +27,8 @@ public class CircularDeque {
 
     public boolean insertLast(int value) {
         if (isFull()) return false;
-        deque[Last] = value;
         Last = (Last + size - 1) % size;
+        deque[Last] = value;
         return true;
     }
 
@@ -46,13 +46,11 @@ public class CircularDeque {
 
     public int getFront() {
         if (isEmpty()) return -1;
-        Front = (Front + size - 1) % size;
-        return deque[Front];
+        return deque[(Front + size - 1) % size];
     }
 
     public int getRear() {
         if (isEmpty()) return -1;
-        Last = (Last + 1) % size;
         return deque[Last];
     }
 
@@ -61,14 +59,14 @@ public class CircularDeque {
     }
 
     public boolean isFull() {
-        return (Last-1+size)% size == Front;
+        return (Front + 1) % size == Last;
     }
 
     public static void main(String[] args) {
-        CircularDeque circularDeque = new CircularDeque(3);
-        circularDeque.insertLast(1);
-        circularDeque.insertLast(2);
-        circularDeque.insertFront(3);
+        MyCircularDeque myCircularDeque = new MyCircularDeque(3);
+        myCircularDeque.insertLast(1);
+        myCircularDeque.insertLast(2);
+        myCircularDeque.insertFront(3);
     }
 
 }
